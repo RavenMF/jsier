@@ -32,45 +32,45 @@ new_file("my_json_file.json")
 To load JSON data from a file, you can use the `load_data()` function:
 
 ```python
-data = json_data_management.load_data("my_json_file.json")
+data = jsier.load_data("my_json_file.json")
 ```
 
 To save JSON data to a file, you can use the `save_data()` function:
 
 ```python
-json_data_management.save_data("my_json_file.json", data)
+jsier.save_data("my_json_file.json", data)
 ```
 
 To add new data to a JSON file, you can use the `add_data()` function:
 
 ```python
 new_data = {"name": "John Doe", "age": 30}
-json_data_management.add_data("my_json_file.json", new_data)
+jsier.add_data("my_json_file.json", new_data)
 ```
 
 To retrieve data from a JSON file by ID, you can use the `get_data()` function:
 
 ```python
-data = json_data_management.get_data("my_json_file.json", 1)
+data = jsier.get_data("my_json_file.json", 1)
 ```
 
 To remove data from a JSON file by ID, you can use the `remove_data()` function:
 
 ```python
-json_data_management.remove_data("my_json_file.json", 1)
+jsier.remove_data("my_json_file.json", 1)
 ```
 
 To validate JSON data against a schema, you can use the `validate_json()` function:
 
 ```python
 schema_file = "my_json_schema.json"
-json_data_management.validate_json("my_json_file.json", schema_file)
+jsier.validate_json("my_json_file.json", schema_file)
 ```
 
 To compare two JSON files and return a diff object, you can use the `diff_json()` function:
 
 ```python
-diff = json_data_management.diff_json("my_json_file1.json", "my_json_file2.json")
+diff = jsier.diff_json("my_json_file1.json", "my_json_file2.json")
 ```
 
 **Database Usage**
